@@ -72,15 +72,15 @@ class Minify
             $scss = new Compiler();
             $scss->setImportPaths(config('minify.scssImportPaths'));
             $formatter = config('minify.scssFormatter');
-            $scss->setFormatter(new $formatter);
+            $scss->setOutputStyle($formatter);
 
             $css = '';
             foreach ((array) $files as $file) {
                 $css .= file_get_contents(self::findCssFile($file));
             }
-            $css = $scss->compile($css);
+            $css = $scss->compileString($css);
 
-            self::outputFile(public_path($output), $css);
+            self::outputFile(public_path($output), $css->getCss());
         }
         return '<link rel="stylesheet" type="text/css" href="' . asset($output) . '?' . filemtime(public_path($output)) . '">';
     }

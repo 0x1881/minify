@@ -71,7 +71,7 @@ return [
     |
     */
 
-    'scssFormatter' => '\ScssPhp\ScssPhp\Formatter\Crunched',
+    'scssFormatter' => 'compressed',
 
     /*
     |--------------------------------------------------------------------------

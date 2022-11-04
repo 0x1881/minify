@@ -22,7 +22,7 @@ You may also need to change the Minify::stylesheet and Minify::javascript calls 
 
 Publish the config file if the defaults doesn't suite your needs:
 
-```php artisan vendor:publish --provider="NickDeKruijk\Minify\MinifyServiceProvider"```
+```php artisan vendor:publish --provider="NickDeKruijk\Minify\ServiceProvider"```
 
 ### Stylesheet
 
