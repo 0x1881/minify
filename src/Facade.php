@@ -1,6 +1,6 @@
 <?php
 
-namespace NickDeKruijk\Minify;
+namespace C4N\Minify;
 
 class Facade extends \Illuminate\Support\Facades\Facade
 {

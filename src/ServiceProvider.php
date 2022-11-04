@@ -1,6 +1,6 @@
 <?php
 
-namespace NickDeKruijk\Minify;
+namespace C4N\Minify;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
