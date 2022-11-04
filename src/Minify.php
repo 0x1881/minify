@@ -1,6 +1,6 @@
 <?php
 
-namespace NickDeKruijk\Minify;
+namespace C4N\Minify;
 
 use ScssPhp\ScssPhp\Compiler;
 use JShrink\Minifier;
